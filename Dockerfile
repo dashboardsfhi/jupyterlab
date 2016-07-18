@@ -1,4 +1,6 @@
-FROM python:2-onbuild
+FROM python:2.7.12
+
+EXPOSE 8888
 
 RUN pip install jupyterlab
 RUN jupyter serverextension enable --py jupyterlab
